@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Товары дня</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #39271b; 
+      --color-text: #f1f1f0;
+      --color-accent: #e49a52;
+      --color-secondary: #857539;
+      --color-light: #ded8ca;
+      --color-pink: #c813af;
+      --color-dark-pink: #b60d79;
+      --color-brown: #af8f56;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--color-bg);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--color-accent);
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: var(--color-light);
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .product-card {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .product-card h3 {
+      color: var(--color-accent);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--color-brown);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-bg);
+      color: var(--color-light);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Товары дня</h1>
+    <p>Выбирайте выгодные предложения и получайте кэшбэк!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О проекте</a>
+    <a href="how-it-works.html">Как начать</a>
+    <a href="products.html">Товары дня</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+
+  <div class="product-card">
+    <h3>Умные часы Xiaomi Mi Band 8</h3>
+    <p>Красивый дизайн, мониторинг здоровья, 14 дней автономии.</p>
+    <a href="https://t.me/feedcashback"  target="_blank" class="btn">Получить ссылку</a>
+  </div>
+
+  <div class="product-card">
+    <h3>Набор столовых приборов из нержавейки</h3>
+    <p>Высокое качество, стильный внешний вид, удобство использования.</p>
+    <a href="https://t.me/feedcashback"  target="_blank" class="btn">Получить ссылку</a>
+  </div>
+
+  <footer>
+    &copy; 2025 ТОВАРЫ ЗА ОТЗЫВ | Все права защищены<br/>
+    <a href="https://t.me/feedcashback"  target="_blank">Telegram-канал</a>
+  </footer>
+
+</body>
+</html>
