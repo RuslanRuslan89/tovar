@@ -2,45 +2,79 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Контакты</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Контакты</h1>
-    <p>Свяжитесь с нами любым способом</p>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Логотип -->
+      <div class="logo">
+        <h1>ТОВАРЫ ЗА ОТЗЫВ</h1>
+        <p class="tagline">Кэшбэк до 80%</p>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="how-it-works.html">Как начать</a></li>
+          <li><a href="products.html">Товары дня</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Кнопка CTA -->
+      <a href="https://t.me/feedcashback" target="_blank" class="btn-header">Подписаться</a>
+
+      <!-- Бургер для мобильных -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="about.html">О проекте</a>
-    <a href="how-it-works.html">Как начать</a>
-    <a href="products.html">Товары дня</a>
-    <a href="contacts.html">Контакты</a>
-  </nav>
+  <!-- Контент страницы -->
+  <main class="page-content">
+    <section>
+      <h2>Telegram</h2>
+      <p>Основной канал: <a href="https://t.me/feedcashback" target="_blank">@feedcashback</a></p>
+      <p>Поддержка: <a href="https://t.me/support_feedcashback" target="_blank">@support_feedcashback</a></p>
+    </section>
 
-  <section>
-    <h2>Telegram</h2>
-    <p>Основной канал: <a href="https://t.me/feedcashback" target="_blank">@feedcashback</a></p>
-    <p>Поддержка: <a href="https://t.me/support_feedcashback" target="_blank">@support_feedcashback</a></p>
-  </section>
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form action="#" method="post"> 
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Сообщение..." required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
 
-  <section>
-    <h2>Форма обратной связи</h2>
-    <form action="#" method="post"> 
-      <input type="text" name="name" placeholder="Ваше имя" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="message" rows="5" placeholder="Сообщение..." required></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
-
+  <!-- Подвал сайта -->
   <footer>
     &copy; 2025 ТОВАРЫ ЗА ОТЗЫВ | Все права защищены<br/>
     <a href="https://t.me/feedcashback"  target="_blank">Telegram-канал</a>
   </footer>
+
+  <!-- JS для бургера -->
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.main-nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
