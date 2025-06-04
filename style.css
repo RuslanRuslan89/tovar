@@ -12,14 +12,13 @@ body {
   line-height: 1.6;
 }
 :root {
-  --color-bg: #1e1e2f;
-  --color-text: #f0f0ff;
-  --color-accent: #ff6b6b;
-  --color-secondary: #6a4c93;
-  --color-light: #2d2d44;
-  --color-pink: #ff8fa3;
-  --color-dark-pink: #e05d7d;
-  --color-brown: #d4a373;
+--color-bg: #f5fbfb;
+--color-text: #1e1e1e;
+--color-accent: #00e0b0;     /* Мятный неон */
+--color-secondary: #ff6ec7;  /* Розовый неон */
+--color-light: #ffffff;
+--color-hover: #00ccaa;
+--color-pink: #ff8fa3;
 }
 /* === Шапка сайта === */
 .site-header {
