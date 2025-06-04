@@ -1,10 +1,10 @@
 /* === Цветовая палитра === */
 :root {
-  --color-bg: #f8f9fa;
-  --color-text: #2d2d2d;
-  --color-accent: #00ccaa;
+  --color-bg: #1e1e2f;       /* Темный фон */
+  --color-text: #f0f0ff;      /* Светлый текст */
+  --color-accent: #00ccaa;    /* Акцентный цвет */
   --color-secondary: #ff6688;
-  --color-light: #fdfdfd;
+  --color-light: #ffffff;     /* Белые блоки */
   --color-hover: #00aaaa;
   --color-pink: #ff99bb;
   --color-border: #e0e0e0;
@@ -23,37 +23,20 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, var(--color-bg) 0%, #e9ecef 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
 }
 
-/* Текстура бумаги через CSS */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.8) 2px, transparent 0);
-  background-size: 20px 20px;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.03;
-}
-
 /* === Шапка сайта === */
 .site-header {
-  background-color: var(--color-light);
-  border-bottom: 1px solid var(--color-border);
+  background-color: #141420;
+  border-bottom: 1px solid #333;
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -84,7 +67,7 @@ body::before {
 }
 
 .main-nav ul li a {
-  color: var(--color-text);
+  color: var(--color-light);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -122,7 +105,7 @@ body::before {
 
 .burger span {
   height: 3px;
-  background-color: var(--color-text);
+  background-color: var(--color-light);
   border-radius: 2px;
   transition: background 0.3s ease;
 }
@@ -137,7 +120,7 @@ body::before {
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: var(--color-light);
+    background-color: var(--color-bg);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -177,20 +160,32 @@ body::before {
 
 section {
   background-color: var(--color-light);
-  color: var(--color-text);
+  color: #1a1a1a;
   padding: 2rem 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
 }
 
 section h2 {
-  color: var(--color-text);
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
+/* === Ссылки внутри секций === */
+section a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* === Списки и маркированные пункты === */
+ul, ol {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* === Кнопки внутри секций === */
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -215,8 +210,8 @@ form textarea {
   margin-bottom: 1rem;
   border: 1px solid var(--color-border);
   border-radius: 5px;
-  background-color: #fff;
-  color: var(--color-text);
+  background-color: #fafafa;
+  color: #1a1a1a;
 }
 
 button[type="submit"] {
@@ -237,8 +232,8 @@ button[type="submit"]:hover {
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: #141420;
+  color: var(--color-light);
   font-size: 0.9rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid #333;
 }
