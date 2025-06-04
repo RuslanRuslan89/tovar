@@ -9,78 +9,91 @@
 </head>
 <body>
 
- <header class="site-header">
-  <div class="container">
-    <div class="logo">
-      <h1>ТОВАРЫ ЗА ОТЗЫВ</h1>
-      <p class="tagline">Кэшбэк до 80% за отзывы</p>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Логотип -->
+      <div class="logo">
+        <h1>ТОВАРЫ ЗА ОТЗЫВ</h1>
+        <p class="tagline">Кэшбэк до 80% за отзывы</p>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="how-it-works.html">Как начать</a></li>
+          <li><a href="products.html">Товары дня</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Кнопка CTA -->
+      <a href="https://t.me/feedcashback" target="_blank" class="btn-header">Подписаться</a>
+
+      <!-- Бургер для мобильных -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
 
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html">О проекте</a></li>
-        <li><a href="how-it-works.html">Как начать</a></li>
-        <li><a href="products.html">Товары дня</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+  <!-- Контент -->
+  <main class="page-content">
+
+    <section>
+      <h2>Как начать?</h2>
+      <ul class="steps">
+        <li>Подпишитесь на канал <a href="https://t.me/feedcashback" target="_blank">@feedcashback</a></li>
+        <li>Получите прямую ссылку на товар</li>
+        <li>Сделайте заказ и получите посылку</li>
+        <li>Напишите честный отзыв</li>
+        <li>Получите кэшбэк до 80%</li>
       </ul>
-    </nav>
+    </section>
 
-    <a href="https://t.me/feedcashback"  target="_blank" class="btn-header">Подписаться</a>
+    <section>
+      <h2>Преимущества</h2>
+      <ul>
+        <li>Высокий кэшбэк без рисков</li>
+        <li>Проверенные товары от надежных продавцов</li>
+        <li>Простой процесс получения вознаграждения</li>
+        <li>Доступность для всех пользователей</li>
+      </ul>
+    </section>
 
-    <!-- Бургер для мобильных -->
-    <button class="burger" id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
+    <section>
+      <h2>Часто задаваемые вопросы</h2>
+      <p><strong>Как долго приходит кэшбэк?</strong><br/>
+      Обычно от 2 до 7 дней после публикации отзыва.</p>
 
-  <section>
-    <h2>Как начать?</h2>
-    <ul class="steps">
-      <li>Подпишитесь на канал <a href="https://t.me/feedcashback" target="_blank">@feedcashback</a></li>
-      <li>Получите прямую ссылку на товар</li>
-      <li>Сделайте заказ и получите посылку</li>
-      <li>Напишите честный отзыв</li>
-      <li>Получите кэшбэк до 80%</li>
-    </ul>
-  </section>
+      <p><strong>Можно ли участвовать из любой страны?</strong><br/>
+      Да, но товары доступны только на территории РФ.</p>
 
-  <section>
-    <h2>Преимущества</h2>
-    <ul>
-      <li>Высокий кэшбэк без рисков</li>
-      <li>Проверенные товары от надежных продавцов</li>
-      <li>Простой процесс получения вознаграждения</li>
-      <li>Доступность для всех пользователей</li>
-    </ul>
-  </section>
+      <p><strong>Нужно ли делать скриншот отзыва?</strong><br/>
+      Нет, достаточно просто написать его на маркетплейсе.</p>
+    </section>
 
-  <section>
-    <h2>Часто задаваемые вопросы</h2>
-    <p><strong>Как долго приходит кэшбэк?</strong><br/>
-    Обычно от 2 до 7 дней после публикации отзыва.</p>
+  </main>
 
-    <p><strong>Можно ли участвовать из любой страны?</strong><br/>
-    Да, но товары доступны только на территории РФ.</p>
-
-    <p><strong>Нужно ли делать скриншот отзыва?</strong><br/>
-    Нет, достаточно просто написать его на маркетплейсе.</p>
-  </section>
-
+  <!-- Подвал сайта -->
   <footer>
     &copy; 2025 ТОВАРЫ ЗА ОТЗЫВ | Все права защищены<br/>
     <a href="https://t.me/feedcashback" target="_blank">Telegram-канал</a>
   </footer>
-<script>
-  const burger = document.getElementById('burger');
-  const nav = document.querySelector('.main-nav');
 
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+  <!-- JS для бургера -->
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.main-nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
